@@ -1,0 +1,17 @@
+@font-face {
+	font-family:"BebasNeueRegular";
+	src: url("../fonts/bebas/BebasNeueRegular.otf");
+	src: url("../fonts/bebas/BebasNeueRegular.otf") format("embedded-opentype"),
+		 url("../fonts/bebas/BebasNeueRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family:"Roboto";
+	src: url("../fonts/roboto/Roboto.ttf") format("truetype");
+	src: url("../fonts/roboto/Roboto.woff") format("woff"),
+		 url("../fonts/roboto/Roboto.woff2") format("woff2");
+	font-style: normal;
+	font-weight: normal;
+	
+}

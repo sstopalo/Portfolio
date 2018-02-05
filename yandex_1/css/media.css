@@ -1,0 +1,210 @@
+@media only screen and (max-width: 660px) {
+	
+.header, 
+.article {
+	padding: 0px;
+	min-width: auto }
+
+body{
+	background-color: #E9ECEF;}
+
+.container {
+	width: 360px; }
+	
+.logo {
+	margin: 15.8px 0px 11.3px 20.5px; }
+ 
+.container_main {
+	width: 360px; }
+ 
+h1 {
+	margin: 0;
+	padding: 24px 0px 0px 16px;
+	float: none; }
+ 
+.btn_close {
+ 	display: none; }
+
+label {
+	padding: 16px 0px 0px 16px; }
+  	
+input, 
+.s_participants, 
+.meeting_room {
+	font-size: 15px;
+	letter-spacing: 0px;
+	padding: 13px 0 14px 10px;
+	margin-left: 16px; }
+
+.i_theme {
+	width: 314px;
+	height: 13px; }
+
+.img_close_mob {
+	width: 11.9px;
+	height: 11.9px; }
+
+.label_date {
+	display: none; }
+
+.label_date_mob {
+	display: inline-block; }
+
+.i_date {
+	width: 314px;
+	height: 13px; }
+
+.label_time {
+	display: none; }
+
+.i_time_start,
+.i_time_end {
+	width: 139px;
+	height: 13px; }
+
+.i_time_start {
+	margin-right: 4px;
+	margin-top: 0px; }
+
+.i_time_end {
+	margin-left: 4px;
+	margin-top: 0px; }
+
+.feedback_form_1,
+.c_main_4,
+.feedback_form_group_right_5 {
+	padding-bottom: 20px;
+	border-bottom: 8px solid #E9ECEF; }
+
+.c_main_2 {
+	padding-top: 16px; }
+
+.s_participants,
+.meeting_room  {
+	width: 328px;
+	height: 44px;
+	padding: 10px 0 12px 10px; }
+	
+.feedback_form_group_right_4 {
+	padding: 0;
+	padding-top: 16px }
+
+.participants_1 {
+	height: 32px;
+	width: 328px;
+	margin-top: 10px;
+	margin-left: 16px; }
+
+.participants_1::before {
+	height: 32px;
+	width: 32px;
+	background-image: url("../img/lex32.png");
+	background-position: -32px 0px; }
+
+.avatar_1 {
+	font-size: 15px;
+	margin: 7px 0px 8px 40px; }
+
+.participants_2,
+.participants_3 {
+	display: none; }
+
+.img4 {
+	position: relative;
+	left: 177px;
+	top: 0px; }
+
+.img7 {
+	left:181px; }
+
+.participants_4 {
+	display: inline-block;
+	background-color: #E9ECEF;
+	height: 32px;
+	width: 328px;
+	border-radius: 16px;
+	margin-top: 10px;
+	margin-left: 16px; }
+
+.participants_4::before {
+	content: "";
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	background-image: url("../img/clark32.png");
+	background-position: -32px 0px; }
+ 
+.feedback_form {
+	position: relative; }
+
+.feedback_form_group_right_5 {
+	width: 360px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -180px;
+	top: 195px; }
+
+.label_theme_5 {
+	display: inline-block; }
+
+.btn_2 {
+	position: absolute;
+	left: 50%;
+	margin: 0 0;
+	margin-left: -180px;
+	top: -63px;
+	width: 360px;
+	height: 54px;
+	background-color: #fff;
+	color: #FF3333;
+	font-size: 15px;
+	line-height: 50px;
+	border-radius: 0px; }
+
+.button:hover {
+	background: #fff; }
+
+.button:active {
+	background: #fff; }
+
+.c_foot {
+	position: absolute;
+	left: 50%;
+	margin: 0 0;
+	margin-left: -180px;
+	top: 721px;
+	height: 80px;
+	width: 360px;
+	background-color: #fff; }
+
+.btn_1, .btn_3 {
+	margin: 0;
+		border-radius: 4px;
+		height: 44px;
+		line-height: 44px;
+		font-size: 15px; }
+	
+.btn_1 {
+	width: 103px;
+	background: #E9ECEF;
+	margin: 16px 0px 0px 97px; }
+
+.btn_1:hover {
+	background: #E9ECEF; }
+	
+.btn_3 {
+	color: #fff;
+	width: 128px;
+	background: #007DFF;
+	margin: 16px 0px 0px 16px; }
+		
+.btn_3:hover {
+	background: #007DFF; }
+}
+
+
+
+
+
+

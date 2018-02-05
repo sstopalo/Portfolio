@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Яндекс переговорки</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="css/calendar.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/calendar.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="container clearfix">
+			<a class="logo" href="#"><img class="img_logo" src="img/logo.svg" alt="Яндекс Переговорки"></a>
+			<a class="button btn_newmeeting" href="#">Создать встречу</a>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="container clearfix">
+			<div class="calendar_left">
+				<a class="btn_cal btn_left" href="#"><img class="img_left" hspace="7px" vspace="6px" src="img/arrow2.svg" alt="left"></a>
+				<input class="input_date" type="text" id="date" placeholder="14 дек &#8226; Сегодня" name="date" readonly="readonly" size="10" onclick="showcalendar(this)"/>
+				<a class="btn_cal btn_right" href="#"><img class="img_left" hspace="9px" vspace="6px" src="img/arrow.svg" alt="right"></a>
+			</div>
+			<div class="calendar_right">
+				<div class="time tm_1">8:00</div>
+				<div class="time tm_2">9</div>
+				<div class="time tm_2">10</div>
+				<div class="time tm_2">11</div>
+				<div class="time tm_2">12</div>		
+				<div class="time tm_2">13</div>
+				<div class="time tm_2">14</div>
+				<div class="time tm_2">15</div>	
+				<div class="time tm_2">16</div>
+				<div class="time tm_2">17</div>
+				<div class="time tm_2">18</div>
+				<div class="time tm_2">19</div>		
+				<div class="time tm_2">20</div>
+				<div class="time tm_2">21</div>
+				<div class="time tm_2">22</div>
+				<div class="time tm_3">23</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav1">
+		<div class="calendar_centr">
+			<div class="time tm_1">8:00</div>
+			<div class="time tm_2">9</div>
+		</div>
+	</div>
+	<div class="nav2">
+		<table class="table_mobile">
+			<tr>
+				<td class="td_first td_simple td_low" colspan="2">7 ЭТАЖ</td>
+				<td class="td_simple td_low td_right"></td>
+				<td class="td_simple td_low td_right"></td>
+			</tr>
+			<tr>
+				<td class="td_one td_b_border">Ржавый Фред <br> <span class="span_td_low">3 - 6 человек</span></td>
+				<td class="td_busy td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+			</tr>
+			<tr>
+				<td class="td_one td_free_one td_b_border">Прачечная <br> <span class="span_td_low">до 10 человек</span></td>
+				<td class="td_busy td_w_border"></td>
+				<td class="td_free td_right td_w_border"></td>
+				<td class="td_free td_right td_w_border"></td>
+			</tr>
+			<tr>
+				<td class="td_one td_free_one td_b_border">Жёлтый дом <br> <span class="span_td_low">до 10 человек</span></td>
+				<td class="td_busy td_w_border"></td>
+				<td class="td_free td_right td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+			</tr>
+			<tr>
+				<td class="td_one">Оранжевый тюл... <br> <span class="span_td_low">3 - 6 человек</span></td>
+				<td class="td_busy"></td>
+				<td class="td_busy td_right"></td>
+				<td class="td_free td_right"></td>
+			</tr>
+			<tr>
+				<td class="td_first td_simple td_low" colspan="2">6 ЭТАЖ</td>
+				<td class="td_simple td_low td_right"></td>
+				<td class="td_simple td_low td_right"></td>
+			</tr>
+			<tr>
+				<td class="td_one td_free_one td_b_border">Джокер <br> <span class="span_td_low">3 - 6 человек</span></td>
+				<td class="td_busy td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+			</tr>
+			<tr>
+				<td class="td_one td_free_one td_b_border">Мариванна <br> <span class="span_td_low">до 10 человек</span></td>
+				<td class="td_busy td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+			</tr>
+			<tr>
+				<td class="td_one td_free_one">Тонкий Боб <br> <span class="span_td_low">до 10 человек</span></td>
+				<td class="td_busy td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+				<td class="td_busy td_right td_w_border"></td>
+			</tr>
+		</table>
+	</div>
+	<div class="article">
+		<div class="container clearfix">
+			<div class="rooms_left">
+				<div class="list">
+					<div class="floor"> 7 ЭТАЖ</div>
+					<div class="room room__busy">Ржавый Фред</div>
+					<div class="quantity quantity__busy">3-6 человек</div>
+					<div class="room room__second room_1">Прачечная</div>
+					<div class="quantity">до 10 человек</div>
+					<div class="room room__second room_2">Жёлтый дом</div>
+					<div class="quantity">до 10 человек</div>
+					<div class="room room__busy room__second">Оранжевый тюльпан</div>
+					<div class="quantity quantity__busy">до 10 человек</div>
+					<div class="floor floor__second"> 6 ЭТАЖ</div>
+					<div class="room room_3">Джокер</div>
+					<div class="quantity">3-6 человек</div>
+					<div class="room room__second room_4">Мариванна</div>
+					<div class="quantity">3-6 человек</div>
+					<div class="room room__second room_5">Тонкий Боб</div>
+					<div class="quantity">3-6 человек</div>
+					<div class="room room__second room_6">Чёрная вдова</div>
+					<div class="quantity">3-6 человек</div>
+					<div class="room room__second room_7">Белорусский ликёр</div>
+					<div class="quantity">3-6 человек</div>
+				</div>
+			</div>
+			<div class="rooms_right">
+			<table class="table_main">
+				<tr>
+					<td class="td_first td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_last td_simple td_tall"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_1 td_middle"></td>
+					<td class="td_all td_free td_free_1 td_middle"></td>
+					<td class="td_all td_free td_free_1 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_2 td_middle"></td>
+					<td class="td_all td_free td_free_2 td_middle"></td>
+					<td class="td_all td_free td_free_2 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_busy_1 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_all td_simple td_tall"></td>
+					<td class="td_last td_simple td_tall"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_3 td_middle"></td>
+					<td class="td_all td_free td_free_3 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_3 td_middle"></td>
+					<td class="td_all td_free td_free_3 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_3 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_3 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_4 td_middle"></td>
+					<td class="td_all td_free td_free_4 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_4 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_4 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_5 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_5 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_5 td_middle"></td>
+					<td class="td_all td_free td_free_5 td_middle"></td>
+					<td class="td_all td_free td_free_5 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_6 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_6 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_6 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_all td_simple td_low"></td>
+					<td class="td_last td_simple td_low"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_free td_free_7 td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_all td_busy td_middle"></td>
+					<td class="td_last td_busy td_middle"></td>
+				</tr>
+				<tr>
+					<td class="td_first td_simple td_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_all td_simple td_very_tall"></td>
+					<td class="td_last td_simple td_very_tall"></td>
+				</tr>
+			</table>
+			<div class="info">
+				<div class="info__top clearfix">
+					<div class="info__top__name">Рассуждения о высоком</div>
+					<a class="info__top__logo__a" href="#"> <img src="img/edit.svg" alt="edit" hspace="7px" vspace="5px"> </a> 	
+				</div>
+				<div class="info__middle">
+					<div class="info__middle__info">
+						14 декабря, 15:00 - 17:00 &nbsp; &#8226; &nbsp; Жёлтый дом
+					</div>
+				<div class="info__bottom">
+					Дарт Вейдер <span class="info__bottom__span">и 12 участников</span>
+				</div>
+					<img class="info__img" src="/img/up.png" alt="">
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
